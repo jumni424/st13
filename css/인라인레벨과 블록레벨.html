@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인라인레벨과 블록레벨</title>
+  <style>
+    *{margin:0; padding:0;} 
+    .container{
+    background-color: #ccc;
+    }
+    .inner{
+      width:80%;
+      margin:0 auto;
+      padding:50px 0;
+      /*background-color: #ef6;*/
+    }
+    .box{
+      /*margin:50px auto;*/
+      margin-bottom:50px;
+      background-color:#fbf;
+    }
+
+    .box:last-child{
+      margin-bottom:0;
+    }
+    /*
+    인라인레벨 widht/height 지정x
+              수직 여백 정상적으로 적용x
+    */
+    .box span{
+      color:#f00;
+      font-weight:bold;
+      font-size:large;
+      background-color: #ef8;
+      padding:16px;
+      margin:8px;
+      width:200px
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inner">
+  
+      <div class="box box1">Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing <span>elit</span>. Sapiente, nobis pariatur. Explicabo
+        nisi voluptate cupiditate nesciunt, delectus alias aliquam maiores obcaecati. Iure laborum excepturi autem illo
+        itaque quis, dicta harum.</div>
+      <div class="box box2">Quia eos impedit aperiam, quasi repellat doloremque culpa natus facere fugit repellendus fuga
+        nulla blanditiis dignissimos nostrum aut. Culpa vero possimus qui illo magnam et deleniti aut unde officiis magni?
+      </div>
+      <div class="box box3">Quia eos impedit aperiam, quasi repellat doloremque culpa natus facere fugit repellendus fuga
+        nulla blanditiis dignissimos nostrum aut. Culpa vero possimus qui illo magnam et deleniti aut unde officiis magni?
+      </div>
+  
+    </div>
+  </div>
+</body>
+</html>
