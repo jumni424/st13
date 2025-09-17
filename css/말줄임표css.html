@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말줄임표css</title>
+  <style>
+    *{margin: 0; padding:0;}
+    .box{
+      margin:50px;
+      padding: 1em;
+      background-color: #ccc;
+    }
+    /*여러줄 말줄임*/
+    .box1{
+    /*  white-space: normal; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    width: 80%;
+    height: 70px;
+    }
+    .box2{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .box3,
+    .box4,
+    .box5{
+      width: 400px;
+      height:40px;
+    }
+    .box3{overflow:visible;}
+    .box4{overflow:hidden;}
+    .box5{overflow:auto;}
+  </style>
+</head>
+<body>
+  <div class="box box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, qui fuga? Reiciendis minus similique, tempora repudiandae doloremque laborum deleniti consectetur, cum rerum qui eligendi esse ratione aliquid? Harum, autem natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, qui fuga? Reiciendis minus similique, tempora repudiandae doloremque laborum deleniti consectetur, cum rerum qui eligendi esse ratione aliquid? Harum, autem natus?</div>
+  <div class="box box2">Possimus quis, asperiores quam, fugit dicta recusandae officia pariatur magni aliquam, dignissimos dolores rem? Pariatur, mollitia hic. Eum temporibus blanditiis itaque ut! Ad soluta iste reprehenderit veniam earum! Modi, provident!</div>
+  <hr>
+  <div class="box box3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quia atque animi repellat corporis, fuga cum ullam ex quidem perspiciatis, itaque ad! Sapiente sit similique harum commodi facilis sed iure?</div>
+  <div class="box box4">Vitae cum blanditiis laudantium at suscipit dolorum, vel repellat repellendus doloribus sit nesciunt consequatur obcaecati autem minima tenetur quisquam nam neque recusandae natus ad ullam explicabo impedit nemo. Dolor, officia.</div>
+  <div class="box box5">Vitae cum blanditiis laudantium at suscipit dolorum, vel repellat repellendus doloribus sit nesciunt consequatur obcaecati autem minima tenetur quisquam nam neque recusandae natus ad ullam explicabo impedit nemo. Dolor, officia.</div>
+</body>
+</html>
