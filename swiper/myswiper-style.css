@@ -37,7 +37,12 @@
 }
 
 /****
+<<<<<<< HEAD
 pagination
+=======
+swiper pagination
+색상변경 bullet의 모양 변경 변수선언
+>>>>>>> 5797e06c8f61d6087e57187f3997e538f0086c24
 */
 
 .myname.swiper{
@@ -58,23 +63,27 @@ pagination
 
 /*********
 swiper scrollbar
+위치조정  변수선언
+
 */
 
 .swiper-scrollbar.swiper-scrollbar-horizontal,
 .swiper-horizontal>.swiper-scrollbar{
   
-        bottom: var(--myswiper-scrollbar-bottom);
-        height: var(--myswiper-scrollbar-height, 4px);
-        left: var(--myswiper-scrollbar-left);
-        position: absolute;
-        top: var(--myswiper-scrollbar-top);
-        width: var(--myswiper-scrollbar-width) ;
-        z-index: 50;
-        background:rgba(0,0,0,0.5);
-        border-radius:0;
+  bottom: var(--myswiper-scrollbar-bottom);
+  height: var(--myswiper-scrollbar-height, 4px);
+  left: var(--myswiper-scrollbar-left);
+  position: absolute;
+  top: var(--myswiper-scrollbar-top);
+  width: var(--myswiper-scrollbar-width) ;
+  z-index: 50;
+  
+  background:rgba(0,0,0,0.5);
+  border-radius: 0;
   
 }
-.myname .swiper-scrollbar-drag{
+
+.myname .swiper-scrollbar-drag {
   /* background: rgba(255,255,255,1); */
   background: rgba(0,0,0,1);
 }
