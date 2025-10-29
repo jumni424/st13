@@ -32,7 +32,7 @@
         width: 20px; 
         height: 20px;
         /* 배경 이미지 경로:  실제 이미지 경로로 수정 */
-        background: no-repeat center/contain url(/myfolder/images/chevron_right.png); 
+        background: no-repeat center/contain url(/myfolder/images/chevron_right.png);
 
         /* 아이콘이 텍스트와 분리되도록 함 */
         margin-left: 10px;
