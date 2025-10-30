@@ -1,0 +1,30 @@
+#footer .inner .bt_logo a {
+  display: none;
+  align-items: center;
+}
+
+.bt_util [data-ez-item="company"],
+.bt_util [data-ez-item="guide"] {
+  display: none;
+}
+
+.bt_info [data-ez-role="title"] {
+  display: none;
+}
+
+#footer.layout3 .inner .bt_cscenter .title {
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+
+#footer .inner .bt_cscenter .bt_txt02>strong {
+  font-weight: 600;
+  display: none;
+}
+
+    #footer.layout3 .inner .bt_bank .title {
+        display: none;
+        margin: 0;
+        width: 100%;
+    }
