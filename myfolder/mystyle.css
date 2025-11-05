@@ -855,3 +855,29 @@ content_list
     .df-bannermanager div[df-banner-clone] iframe{
       display: block; width: 100%; height: 100%;
     }
+
+/* 
+.tab-vertical.tab-slides
+ */
+.tab-slides .ec-base-product .prdList.swiper-wrapper{
+  flex-wrap: nowrap;
+} 
+/* 버튼색상변경 */
+[class^='btnSubmit'], a[class^='btnSubmit'] {
+    background: #4a7022;
+    color: #fff;
+}
+
+@media (max-width:1024.002px){
+  .xans-product-detail .xans-product-option .ec-product-button.ec-product-preview li {
+    border-radius:0%;
+    margin-right: 8px;
+    padding:4px;
+    border: 10px solid #efefef;
+    background-color:#fff;
+}
+  .xans-product-detail .xans-product-option .ec-product-button li {
+    width:30px;
+    height:30px;
+}
+}

@@ -1,14 +1,193 @@
+#header {
+  position: relative;
+  z-index: 10;
+  /* 헤더를 앞쪽으로 */
+}
+
+.main header#header {
+  background: transparent;
+}
+
+#header .inner .top_nav_box {
+  background-color: transparent;
+}
+
+#header {
+  border-bottom: 1px solid #ffffff00 !important;
+  margin-top: 18px;
+}
+
+#header.fixed {
+  border-bottom: 1px solid #ffffff00 !important;
+}
+
+@media (min-width:2560px) {
+  [data-ez="module-1w3gn81-1"] {
+    position: relative;
+    margin-top: -130px;
+    /* 헤더 높이만큼 음수 마진으로 끌어올림 */
+    z-index: 5;
+    /* 헤더보다 뒤에 깔리게 */
+  }
+}
+
+
+@media (min-width:1025px) {
+  #header .inner .toparea {
+    display: none;
+  }
+
+  #top_nav_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+
+  /* 메뉴 (왼쪽 정렬) */
+  #top_nav_box [data-ez-module="menu-main/1"] {
+    order: 1;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* 로고 (가운데 정렬) */
+  #top_nav_box .top_logo {
+    order: 2;
+    flex: 0 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* 마이페이지 아이콘 (오른쪽 정렬) */
+  #top_nav_box .top_mypage {
+    order: 3;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #header .inner .top_nav_box .top_mypage {
+    top: 0px;
+  }
+
+
+  [data-ez="module-1w3gn81-1"] {
+    position: relative;
+    margin-top: -100px;
+    /* 헤더 높이만큼 음수 마진으로 끌어올림 */
+    z-index: 5;
+    /* 헤더보다 뒤에 깔리게 */
+  }
+
+  .top_category a {
+    color: #f0d36a !important;
+  }
+
+  /* 아이콘 대신 글자 */
+  .top_mypage svg {
+    display: none;
+  }
+
+  .top_mypage a.eSearch::after {
+    content: "search";
+  }
+
+  .top_mypage a[href*="myshop"]::after {
+    content: "account";
+  }
+
+  .top_mypage a[href*="order/basket"]::after {
+    content: "cart";
+  }
+
+  .top_mypage a::after {
+    color: #f0d36a;
+    font-size: 14px;
+    margin-left: 4px;
+  }
+
+  #header .inner .top_nav_box .top_mypage a.xans-layout-orderbasketcount .count {
+    top: 0px;
+    right: 4px;
+    margin-top: 13px;
+    background-color: #4a7022;
+    color: #f0d36a;
+  }
+
+  #header .inner .top_nav_box .top_mypage a:first-child {
+    margin: 0;
+    padding: 0 25px;
+  }
+
+  #header .inner .top_nav_box .top_mypage a {
+    margin: 0;
+    padding: 0 25px;
+  }
+
+  #header .inner .top_nav_box .top_mypage {
+    top: 0px;
+    margin: 0 130px;
+  }
+}
+
+
+@media (max-width:1024px) {
+  [data-ez="module-1w3gn81-1"] {
+    position: relative;
+    margin-top: -112px;
+    /* 헤더 높이만큼 음수 마진으로 끌어올림 */
+    z-index: 5;
+    /* 헤더보다 뒤에 깔리게 */
+    width: 100%;
+  }
+
+  #header .inner .top_nav_box .top_logo img {
+    max-width: 400px;
+    max-height: 50px;
+  }
+
+  .icon.icoNav {
+    color: #f0d36a;
+    background: currentColor;
+  }
+
+  .top_mypage .icon path {
+  stroke: #f0d36a;
+}
+
+.RTB {
+  display: none !important;
+}
+}
+
+/* <-----------------------------------푸터-----------------------------------------> */
+
+#footer {
+  background: #67735F;
+}
+
+#footer * {
+  color: #ffffff !important;
+}
+
 #footer .inner .bt_logo a {
   display: none;
   align-items: center;
 }
 
-.bt_util [data-ez-item="company"],
 .bt_util [data-ez-item="guide"] {
   display: none;
 }
 
 .bt_info [data-ez-role="title"] {
+  display: none;
+}
+
+.bt_sns [data-ez-role="title"] {
   display: none;
 }
 
@@ -23,8 +202,236 @@
   display: none;
 }
 
-    #footer.layout3 .inner .bt_bank .title {
-        display: none;
-        margin: 0;
-        width: 100%;
-    }
+#footer.layout3 .inner .bt_bank .title {
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+
+#footer .inner .bt_bank .title_sub {
+  display: none;
+}
+
+#footer [data-ez-item="company_name"] [data-ez-role="field"] {
+  display: none;
+}
+
+#footer [data-ez-item="president_name"] [data-ez-role="field"] {
+  display: none;
+}
+
+.bt_info_list [data-ez-item="phone"] {
+  display: none;
+}
+
+#footer [data-ez-item="address"] {
+  flex-basis: 100%;
+}
+
+#footer [data-ez-item="company_regno"] {
+  flex-basis: 100%;
+}
+
+#footer [data-ez-item="network_regno"] {
+  flex-basis: 100%;
+}
+
+#footer [data-ez-item="cpo_name"] {
+  flex-basis: 100%;
+}
+
+/* 카테고리명 굵기 */
+#footer .inner .bt_info .bt_info_list>div span:first-child {
+  font-weight: 400;
+}
+
+#footer .inner .bt_info .bt_info_list [data-ez-item="company_name"] {
+  padding-right: 5px;
+}
+
+#footer .inner {
+  max-width: 1760px;
+  width: 92%;
+  margin: 0 auto;
+  padding: 30px 0;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-ez-group="cs"] [data-ez-role="list"] {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#footer [data-ez-group="bank"] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer.layout3 .inner .bt_util {
+  margin: 0px auto 10px;
+}
+
+#footer.layout3 .inner .bt_info {
+  margin: 0 auto 0px;
+}
+
+#footer.layout3 .inner .bt_cscenter {
+  margin: 0 auto 0px;
+}
+
+#footer .inner .bt_cscenter .bt_txt01 {
+  margin-bottom: 0px;
+}
+
+#footer [data-ez-item="runtime"] {
+  display: none;
+}
+
+#footer .inner .bt_cscenter .bt_txt02 {
+  margin-bottom: 0px;
+}
+
+#footer.layout3 .inner .bt_bank {
+  margin: 0 auto 0;
+}
+
+#footer.layout3 .inner .bt_wrap2 {
+  border: 0;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer.layout3 .inner .bt_sns {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#footer .inner .bt_sns a {
+  margin-left: 0px;
+}
+
+
+#footer.layout3 .inner .bt_info .bt_info_list>div {
+  margin: 0;
+}
+
+#footer [data-ez-item="company_name"] {
+  padding-right: 10px;
+}
+
+#footer .inner .bt_sns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bt_sns a svg {
+  width: 23px !important;
+  height: 23px !important;
+}
+
+.bt_sns a[data-ez-item="instagram"] .icon path {
+  fill: #ffffff !important;
+}
+
+#footer .inner .bt_info .bt_info_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#footer .inner .bt_wrap2 .bt_copyright {
+  line-height: 1.8;
+}
+
+#footer .inner .bt_bank .bt_txt02 {
+  line-height: 1.8;
+}
+
+#footer .inner .bt_cscenter [data-ez-role="list"],
+#footer .inner .bt_cscenter [data-ez-role="list"] * {
+  line-height: 1.8;
+}
+
+#footer.layout3 .inner .bt_util,
+#footer.layout3 .inner .bt_util * {
+  font-size: 12px;
+}
+
+#footer [data-ez-item="address"] {
+  font-size: 12px;
+}
+
+/* 맨위마진 */
+#footer.layout3 .inner .bt_logo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#footer.layout3 .inner .bt_wrap2 {
+  margin-bottom: 15px;
+}
+
+#footer [data-ez-item="address"] {
+  margin: 0 auto 0;
+  line-height: 1.8;
+}
+
+
+/* 모바일 조정 */
+@media (max-width: 1024px) {
+  #footer {
+    padding-bottom: 0px;
+  }
+
+  #footer .inner .bt_info .bt_info_list {
+    font-size: 10px;
+  }
+
+  #footer .inner .bt_cscenter [data-ez-role="list"],
+  #footer .inner .bt_cscenter [data-ez-role="list"] * {
+    font-size: 10px !important;
+  }
+
+  #footer .inner .bt_bank .bt_txt02 {
+    font-size: 10px;
+  }
+
+  #footer [data-ez-item="address"] {
+    font-size: 10px;
+  }
+
+  #footer .inner .bt_wrap2 .bt_copyright {
+    font-size: 10px;
+  }
+
+  #footer.layout3 .inner .bt_util {
+    font-size: 10px;
+  }
+
+  #footer .inner .bt_info {
+    text-align: center;
+  }
+
+  #footer.layout3 .inner .bt_util,
+  #footer.layout3 .inner .bt_util * {
+    font-size: 10px !important;
+  }
+
+  #footer [data-ez-item="president_name"] [data-ez-role="field"] {
+    display: none;
+  }
+
+  #footer .bt_util [data-ez-role="list"]>[data-ez-item="privacy"] {
+    margin: 0 0 10px 0;
+  }
+}
