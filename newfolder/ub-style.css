@@ -1,10 +1,10 @@
-#header {
+header {
   position: relative;
   z-index: 10;
   /* 헤더를 앞쪽으로 */
 }
 
-.main header#header {
+#header {
   background: transparent;
 }
 
@@ -20,6 +20,28 @@
 #header.fixed {
   border-bottom: 1px solid #ffffff00 !important;
 }
+
+
+/* 헤더카테고리 */
+#header .inner .top_nav_box .top_category .sub_cate01 li a, #header .inner .top_nav_box .top_category .sub-category li a {
+    padding: 10px 20px 10px 15px;
+    white-space: nowrap;
+    text-align: start;
+}
+
+#header .inner .top_nav_box .top_category .sub_cate01 {
+    background-color: #ffffff2e;
+    border: none;
+}
+
+/* 연습 */
+#header .inner .top_nav_box .top_category .sub_cate01 li a, #header .inner .top_nav_box .top_category .sub-category li a {
+    color: #f0d36a;
+}
+#header .inner .top_nav_box .top_category .sub_cate01 li:hover > a, #header .inner .top_nav_box .top_category .sub-category li:hover > a {
+    color: #ffffff;
+}
+/* 연습끝 */
 
 @media (min-width:2560px) {
   [data-ez="module-1w3gn81-1"] {
@@ -50,7 +72,10 @@
     order: 1;
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content:start;
+    margin-left:87px;
+    width:auto;
+    position:static;
   }
 
   /* 로고 (가운데 정렬) */
@@ -69,11 +94,6 @@
     display: flex;
     justify-content: flex-end;
   }
-
-  #header .inner .top_nav_box .top_mypage {
-    top: 0px;
-  }
-
 
   [data-ez="module-1w3gn81-1"] {
     position: relative;
@@ -130,7 +150,11 @@
 
   #header .inner .top_nav_box .top_mypage {
     top: 0px;
-    margin: 0 130px;
+    margin:0px;
+    width:auto;
+    flex:none;
+    box-sizing:border-box;
+    margin-right:80px;
   }
 }
 
@@ -164,7 +188,7 @@
 }
 }
 
-/* <-----------------------------------푸터-----------------------------------------> */
+/* <-----푸터--------> */
 
 #footer {
   background: #67735F;
