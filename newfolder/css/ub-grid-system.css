@@ -30,8 +30,8 @@
 }
 
 [class*="col-"] {
-    padding-left: var(--dan-space);
-  padding-right: var(--dan-space);
+    /* padding-left: var(--dan-space);
+  padding-right: var(--dan-space); */
     /* padding-left: 0;
   padding-right: 0; */
   box-sizing: border-box;

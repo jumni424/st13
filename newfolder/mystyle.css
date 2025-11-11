@@ -475,9 +475,7 @@ ub-dan
 
 .ub-dan{}
 .ub-dan-row{}
-.ub-dan-item{
-  border:1px solid #f00;
-}
+.ub-dan-item{}
 /**********
 단처리 태블릿 이하 스크롤
 .ub-dan-row.md-scroll

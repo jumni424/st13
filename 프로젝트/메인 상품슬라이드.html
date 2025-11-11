@@ -1,0 +1,436 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
+    <!-- PG크로스브라우징필수내용 -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <!-- // PG크로스브라우징필수내용 -->
+
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <link rel="stylesheet" href="/프로젝트/layout/basic/css/common.css"><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/layout.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-ui.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-button.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-tab.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-table.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-tooltip.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-help.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-fold.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-box.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-desc.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-product.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-prdInfo.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/ec-base-paginate.css">
+  <link rel="stylesheet" href="/newfolder/css/ub-variables.css">
+  <link rel="stylesheet" href="/newfolder/css/ub-grid-system.css">
+    <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-fold.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-desc.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+  	<!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'><!-- theme03 -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"><!-- theme03 -->
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet"><!-- theme04 -->
+
+    <!--@css(/layout/basic/css/swiper.min.css)-->
+	<!--@js(/layout/basic/js/swiper-bundle.min.js)-->
+	<!--@js(/js/module/product/sale_price.js)-->
+
+    <!--@js(/layout/basic/js/basic.js)-->
+    <!--@js(/layout/basic/js/layout.js)-->
+    <!--@js(/js/common.js)-->
+    <script>try{window.EZST={q:[],register:function(a,b){this.push([a,(b.init||b)(),arguments])}}}catch(e){}</script>
+    <!--ez-favicon[-->
+    <!--ez-favicon]-->
+    <!--@js(/ez/init.js)-->
+<script type="text/ez-prop">
+	<ez-prop data-version="1.0.0">
+		<ez-var data-prop="theme" data-namespace="ez.layout.theme" data-type="array">
+			<ez-item data-id="theme01" data-name="MODERN" data-desc="(블랙+노토산스)" data-font="Noto Sans KR" data-background-color="#f5f5f5" override-value="html" data-font-css="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
+				모던하고 차분한 스타일
+				<!-- HTML도 <b>이렇게</b> 가능합니다.<br>
+				세부 옵션은 <a href="https://sample.cafe24.com/theme01" target="_blank">이곳을</a> 통해 확인 할 수 있습니다. -->
+			</ez-item>
+			<ez-item data-id="theme02" data-name="SOFT" data-desc="은은하고 부드러운 스타일	" data-font="Noto Sans KR" data-background-color="#d8d9ed" data-font-css="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"></ez-item>
+			<ez-item data-id="theme03" data-name="BREEZY" data-desc="밝고 경쾌한 스타일" data-font="Spoqa Han Sans Neo" data-background-color="#ffc1a8" data-font-css="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"></ez-item>
+			<ez-item data-id="theme04" data-name="FRESH" data-desc="시원하고 산뜻한 스타일" data-font="Nanum Gothic" data-background-color="#c3e7e7" data-font-css="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Red+Hat+Display:wght@400;500;700&display=swap"></ez-item>
+		</ez-var>
+	</ez-prop>
+</script>
+</head>
+<body class="theme01" data-ez-theme="theme01">
+	<div id="skipNavigation">
+		<p><a href="#category">전체상품목록 바로가기</a></p>
+		<p><a href="#contents">본문 바로가기</a></p>
+	</div>
+	<div id="wrap">
+<!--@import(/layout/basic/header.html)-->
+<!--@import(/layout/basic/sidebar.html)-->
+<div id="container" data-ez="layout-0mg7t5x-1">
+			<div id="contents">
+				<span module="Layout_MobileAction" class="RTMB">
+					<a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)-->뒤로가기</a>
+				</span>
+				<!--@contents-->
+        <section class="section main_product_slide section_full" data-ez-module="product-list-slide/2" data-ez-layout="grid5_slide list_gallery" data-ez="contents-043qcj1-1">
+	
+
+	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 온라인 타이틀 수정하는곳 -->
+		<div class="main_title_txt01" data-ez-role="title">shop</div>
+		<div class="main_title_txt02" data-ez-role="subtitle">남겨진 것들의 이야기를 담아 당신에게 따뜻한 위로를 전합니다.</div>
+	</div><!-- //main_title -->
+
+	<div data-ez-holder="product_listmain">
+		<div class="xans-element- xans-product xans-product-listmain-12 xans-product-listmain xans-product-12 ec-base-product swiper-container special_slide swiper-container-initialized swiper-container-horizontal swiper-container-android"><ul class="swiper-wrapper prdList grid5_slide list_gallery" data-ez-role="layout ez-discount-tag" style="transition-duration: 0ms; transform: translate3d(-2000px, 0px, 0px);">
+				<!--
+※ 상품진열 슬라이드 공통소스
+-->
+<li id="anchorBoxId_23" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/allone-파우치/23/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251028/9dbd04d451e998d89e4bd286e36d25f9.png" id="eListPrdImage23_13" alt="allone 파우치" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_23">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="23" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('23','1', '13', 'A0000', false, '1', 'P000000X', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="27000">
+			<div class="name"><a href="/skin-skin5/product/allone-파우치/23/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">allone 파우치</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">27,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_36" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/자투리-파우치/36/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251028/0d448776196d6b8d0ff9a27ba19f8bdc.png" id="eListPrdImage36_13" alt="자투리 파우치" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_36">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish on"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_after.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 후" productno="36" categoryno="1" icon_status="on" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('36','1', '13', 'A0000', false, '1', 'P00000BK', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="25000">
+			<div class="name"><a href="/skin-skin5/product/자투리-파우치/36/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">자투리 파우치</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">25,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_21" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/구멍난-양말-파우치/21/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251028/83f652f0fbbe55bab16afe5417f99645.png" id="eListPrdImage21_13" alt="구멍난 양말 파우치" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_21">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="21" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('21','1', '13', 'A0000', false, '1', 'P000000V', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="25000">
+			<div class="name"><a href="/skin-skin5/product/구멍난-양말-파우치/21/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">구멍난 양말 파우치</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">25,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_30" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/allone/30/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251028/95d6b7c1c143259aee63f66d73e4785e.png" id="eListPrdImage30_13" alt="allone" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_30">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="30" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(30,  1, 'basket', '1')" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/allone/30/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">allone</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_11" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/melting-snowman/11/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251027/024276d7e453457bd0bff49fa1fab000.png" id="eListPrdImage11_13" alt="Melting Snowman" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_11">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish on"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_after.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 후" productno="11" categoryno="1" icon_status="on" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(11,  1, 'basket', '1')" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/melting-snowman/11/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">Melting Snowman</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_14" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/shiny-rabbit/14/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251027/2a1ca5bce9aeedf729d12d6ce65d812a.png" id="eListPrdImage14_13" alt="shiny rabbit" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_14">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="14" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('14','1', '13', 'A0000', false, '1', 'P000000O', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/shiny-rabbit/14/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">shiny rabbit</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_12" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/tree-stump/12/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251027/d723b9d2c95d6a764aafa752381f63e8.png" id="eListPrdImage12_13" alt="Tree Stump" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_12">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="12" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('12','1', '13', 'A0000', false, '1', 'P000000M', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/tree-stump/12/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">Tree Stump</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_19" class="swiper-slide xans-record- swiper-slide-prev" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/사과심지/19/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251027/5173c90be20ff040608b06cfc1aeea84.png" id="eListPrdImage19_13" alt="사과심지" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_19">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="19" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('19','1', '13', 'A0000', false, '1', 'P000000T', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/사과심지/19/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">사과심지</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_13" class="swiper-slide xans-record- swiper-slide-active" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/butterfly/13/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251027/c21f8e432ca6d32dcdaf899366d1a7e9.png" id="eListPrdImage13_13" alt="butterfly" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_13">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="13" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('13','1', '13', 'A0000', false, '1', 'P000000N', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/butterfly/13/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">butterfly</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_29" class="swiper-slide xans-record- swiper-slide-next" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/allone-그립톡/29/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251028/271d688d5bc1bddd0028a23395fbca19.png" id="eListPrdImage29_13" alt="allone 그립톡" class="swiper-lazy swiper-lazy-loaded" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_29">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="29" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('29','1', '13', 'A0000', false, '1', 'P00000BD', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/allone-그립톡/29/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">allone 그립톡</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_33" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/토끼-그립톡/33/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251028/050f4e8c7ce0e8e121ca2f168c062d39.png" id="eListPrdImage33_13" alt="토끼 그립톡" class="swiper-lazy" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_33">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="33" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('33','1', '13', 'A0000', false, '1', 'P00000BH', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/토끼-그립톡/33/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">토끼 그립톡</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_34" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/나비-그립톡/34/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251028/bb312752576a8a14a70e39ee6f97b66d.png" id="eListPrdImage34_13" alt="나비 그립톡" class="swiper-lazy" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_34">0</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="34" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('34','1', '13', 'A0000', false, '1', 'P00000BI', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/나비-그립톡/34/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">나비 그립톡</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_35" class="swiper-slide xans-record-" style="margin-right: 20px;">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin5/product/사과심지-그립톡/35/category/1/display/13/?icid=MAIN.product_listmain_12"><img src="//ecimg.cafe24img.com/pg2183b63043891014/jumin24/web/product/medium/20251028/ea052636a384e9a39b3e7e1ca9508eec.png" id="eListPrdImage35_13" alt="사과심지 그립톡" class="swiper-lazy" loading="lazy"></a>
+			<div class="likeButton displaynone"><button type="button"> <strong><span class="likePrdCount likePrdCount_35">1</span></strong></button></div>
+			<div class="badge">BEST<span></span>
+</div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="35" categoryno="1" icon_status="off" login_status="T" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart_mobile.png" onclick="category_add_basket('35','1', '13', 'A0000', false, '1', 'P00000BJ', 'A', 'F', '0');" alt="" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="20000">
+			<div class="name"><a href="/skin-skin5/product/사과심지-그립톡/35/category/1/display/13/?icid=MAIN.product_listmain_12" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">사과심지 그립톡</span></a></div>
+			<ul class="xans-element- xans-product xans-product-listitem-12 xans-product-listitem xans-product-12 spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">20,000원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+			</ul>
+<div class="swiper-scrollbar"><div class="swiper-scrollbar-drag" style="transform: translate3d(608.669px, 0px, 0px); width: 311.638px; transition-duration: 0ms;"></div></div>
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+	</div>
+	<div class="swiper-button-prev swiper-button-prev-special_slide" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+	<div class="swiper-button-next swiper-button-next-special_slide" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+</section>
+			</div>
+		</div>
+<!--@import(/layout/basic/footer.html)-->
+<!--#ez="1/1"-->
+</div><!-- //wrap -->
+
+
+	<div class="layer_shadow" id="layer_shadow"></div>
+	<div id="layoutDimmed" class="dimmed"></div>
+
+   <link rel="stylesheet" href="/프로젝트/layout/basic/css/sub_style.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/sub_theme.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme01.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme02.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme03.css">
+  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_layout.css">
+
+  <link rel="stylesheet" href="/newfolder/mystyle.css">
+
+	<!--@css(/layout/basic/css/sub_style.css)-->
+	<!--@css(/layout/basic/css/sub_theme.css)-->
+	<!--@css(/layout/basic/css/add_theme01.css)-->
+	<!--@css(/layout/basic/css/add_theme02.css)-->
+	<!--@css(/layout/basic/css/add_theme03.css)-->
+	<!--@css(/layout/basic/css/add_layout.css)-->
+    
+    <!--@css(/newfolder/css/ub-variables.css)-->
+    <!--@css(/newfolder/css/ub-grid-system.css)-->
+    <!--@css(/newfolder/mystyle.css)-->
+
+    <!--@js(/newfolder/js/myscript.js)-->
+    
+</body>
+</html>
