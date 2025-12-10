@@ -94,6 +94,26 @@
 					<a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)-->뒤로가기</a>
 				</span>
 				<!--@contents-->
+
+<div data-ez="contents-1vs7xpi-1" class="xans-element- xans-layout xans-layout-searchheader "><!--
+		$product_page=/product/detail.html
+		$category_page=/product/list.html
+	-->
+<div class="title"></div>
+<fieldset>
+		<legend>검색</legend>
+		<input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"><button type="button" class="btnDelete displaynone">삭제</button><button type="button" class="btnSearch" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon" role="img">
+    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 19c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z"></path>
+    <path stroke="#000" stroke-linejoin="round" stroke-width="1.5" d="M22 22l-5-5"></path>
+</svg> 검색</button>
+		<ul class="autoDrop" id=""></ul>
+	</fieldset>
+<button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+</div>
+
+
+
+
 			</div>
 		</div>
 <!--@import(/layout/basic/footer.html)-->
